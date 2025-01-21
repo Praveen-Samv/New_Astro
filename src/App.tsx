@@ -118,7 +118,7 @@
 
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Blog_1 from "./components/NavbarInfo/Blog_1";
 import About from "./components/NavbarInfo/About";
@@ -143,7 +143,6 @@ import Mercury from "./components/bolgs/Mercury";
 import FinacialAstro from "./components/bolgs/FinacialAstro";
 import AstrologyEducation from "./components/bolgs/AstrologyEducation";
 import AstrologyShift from "./components/bolgs/AstrologyShift";
-import supabase from "./components/config/supabaseClient";
 import GlobalAffairs from "./components/bolgs/GlobalAffiars";
 
 const App: React.FC = () => {
@@ -202,27 +201,27 @@ const App: React.FC = () => {
 };
 
 // Protected Route Component
-const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
-  const [loading, setLoading] = React.useState(true);
+// const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+//   const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+//   const [loading, setLoading] = React.useState(true);
 
-  React.useEffect(() => {
-    const checkAuth = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (user) {
-        setIsAuthenticated(true);
-      }
-      setLoading(false);
-    };
+//   React.useEffect(() => {
+//     const checkAuth = async () => {
+//       const { data: { user } } = await supabase.auth.getUser();
+//       if (user) {
+//         setIsAuthenticated(true);
+//       }
+//       setLoading(false);
+//     };
 
-    checkAuth();
-  }, []);
+//     checkAuth();
+//   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>; // Show a loading spinner
-  }
+//   if (loading) {
+//     return <div>Loading...</div>; // Show a loading spinner
+//   }
 
-  return isAuthenticated ? children : <Navigate to="/login" />;
-};
+//   return isAuthenticated ? children : <Navigate to="/login" />;
+// };
 
 export default App;
