@@ -179,7 +179,7 @@ const BlogsMalooha = () => {
             <div className="relative h-full backdrop-blur-md bg-black/30">
               <img
                 src={blog.image}
-                alt={blog.title}
+                alt={blog.title}    
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
