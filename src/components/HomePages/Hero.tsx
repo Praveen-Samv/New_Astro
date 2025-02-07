@@ -218,6 +218,105 @@
 // export default Hero;
 
 
+// import React, { useState } from 'react';
+// import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+// const Hero: React.FC = () => {
+//   const [backgroundImage, setBackgroundImage] = useState(
+//     'https://image-resource.creatie.ai/146256977394649/146256977394651/b6dd8af070a44c78af12f389af43ff63.jpg'
+//   );
+
+//   const sliderSettings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     afterChange: (current: number) => {
+//       // Update the background image based on the current slide index
+//       setBackgroundImage(services[current].image);
+//     },
+//   };
+
+//   const services = [
+//     {
+//       title: 'Service 1',
+//       description: 'Description for service 1',
+//       image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/b6dd8af070a44c78af12f389af43ff63.jpg',
+//     },
+//     {
+//       title: 'Service 2',
+//       description: 'Description for service 2',
+//       image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/16b8ed602622fc00c181632807718983.jpg',
+//     },
+//     {
+//       title: 'Service 3',
+//       description: 'Description for service 3',
+//       image: 'https://image-resource.creatie.ai/146256977394650/146256977394652/6e51027dba348583de149cd5ce2e6876.webp',
+//     },
+//     {
+//       title: 'Service 4',
+//       description: 'Description for service 4',
+//       image: 'https://newseu.cgtn.com/news/2021-01-11/World-famous-astrologer-shares-her-optimism-for-2021-WTw73sf3iM/img/d388cbf9ca204134981c21b215bdffef/d388cbf9ca204134981c21b215bdffef-1280.png',
+//     },
+//     {
+//       title: 'Service 5',
+//       description: 'Description for service 5',
+//       image: 'https://media.zenfs.com/es/el_nuevo_herald_986/3ad16804f99f34318526d3ed3bff6ad7',
+//     },
+//   ];
+
+//   return (
+//     <div
+//       className="bg-cover bg-center min-h-fit transition-all duration-500 relative"
+//       style={{ backgroundImage: `url(${backgroundImage})` }}
+//     >
+//       {/* Semi-transparent overlay */}
+//       <div className="absolute inset-0 bg-black bg-opacity-55"></div>
+
+//       {/* Flex container to align content and services side by side */}
+//       <div className="flex flex-col md:flex-row items-center justify-between px-10 py-20 relative z-10">
+//         {/* Left Side: Content */}
+//         <div className="w-full  md:w-1/2 text-center md:text-left mt-72 md:mb-0 text-white">
+//           <h1 className="text-4xl font-bold">Unlock Your Business Potential with Astrology & Vastu Insights</h1>
+//           <p className="mt-4">
+//             Enhance decision-making, improve workforce compatibility, and boost business success with personalized
+//             astrological consultations tailored for your corporate needs.
+//           </p>
+//           <button className="mt-6 px-6 py-2 bg-orange-500 text-white rounded">Get Started</button>
+//         </div>
+
+//         {/* Right Side: Services Slider */}
+//         <div className="w-full md:w-1/3 mt-52">
+//           <Slider {...sliderSettings}>
+//             {services.map((service, index) => (
+//               <div key={index} className="p-4">
+//                 <div className="p-4 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+//                   <img
+//                     src={service.image}
+//                     alt={service.title}
+//                     className="w-full h-80 object-cover rounded-t-lg"
+//                   />
+//                 </div>
+//               </div>
+//             ))}
+//           </Slider>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//  Responsive way :
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -268,6 +367,11 @@ const Hero: React.FC = () => {
       description: 'Description for service 5',
       image: 'https://media.zenfs.com/es/el_nuevo_herald_986/3ad16804f99f34318526d3ed3bff6ad7',
     },
+    {
+      title: 'Service 6',
+      description: 'Description for service 5',
+      image: 'https://spravkarf24.ru/uploads/posts/others/rs/2024/06/goroskop-2-1536x1024-1.jpg',
+    }
   ];
 
   return (
@@ -279,19 +383,21 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-black bg-opacity-55"></div>
 
       {/* Flex container to align content and services side by side */}
-      <div className="flex flex-col md:flex-row items-center justify-between px-10 py-20 relative z-10">
+      <div className="container mx-auto flex flex-col md:flex-row mt-56 items-center justify-between px-4 md:px-10 py-20 relative z-10">
         {/* Left Side: Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0 text-white">
-          <h1 className="text-4xl font-bold">Unlock Your Business Potential with Astrology & Vastu Insights</h1>
-          <p className="mt-4">
+        <div className="w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0 text-white">
+          <h1 className="text-3xl md:text-4xl font-bold">Unlock Your Business Potential with Astrology & Vastu Insights</h1>
+          <p className="mt-4 text-sm md:text-base">
             Enhance decision-making, improve workforce compatibility, and boost business success with personalized
             astrological consultations tailored for your corporate needs.
           </p>
-          <button className="mt-6 px-6 py-2 bg-orange-500 text-white rounded">Get Started</button>
+          <button className="mt-6 px-6 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors">
+            Get Started
+          </button>
         </div>
 
         {/* Right Side: Services Slider */}
-        <div className="w-full md:w-1/3 mt-52">
+        <div className="w-full md:w-1/3">
           <Slider {...sliderSettings}>
             {services.map((service, index) => (
               <div key={index} className="p-4">
@@ -299,7 +405,7 @@ const Hero: React.FC = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-80 object-cover rounded-t-lg"
+                    className="w-full h-48 md:h-80 object-cover rounded-t-lg"
                   />
                 </div>
               </div>
@@ -312,6 +418,111 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+// const Hero: React.FC = () => {
+//   const [backgroundImage, setBackgroundImage] = useState(
+//     'https://image-resource.creatie.ai/146256977394649/146256977394651/b6dd8af070a44c78af12f389af43ff63.jpg'
+//   );
+
+//   const services = [
+//     {
+//       title: 'Service 1',
+//       description: 'Description for service 1',
+//       image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/b6dd8af070a44c78af12f389af43ff63.jpg',
+//     },
+//     {
+//       title: 'Service 2',
+//       description: 'Description for service 2',
+//       image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/16b8ed602622fc00c181632807718983.jpg',
+//     },
+//     {
+//       title: 'Service 3',
+//       description: 'Description for service 3',
+//       image: 'https://image-resource.creatie.ai/146256977394650/146256977394652/6e51027dba348583de149cd5ce2e6876.webp',
+//     },
+//     {
+//       title: 'Service 4',
+//       description: 'Description for service 4',
+//       image: 'https://newseu.cgtn.com/news/2021-01-11/World-famous-astrologer-shares-her-optimism-for-2021-WTw73sf3iM/img/d388cbf9ca204134981c21b215bdffef/d388cbf9ca204134981c21b215bdffef-1280.png',
+//     },
+//     {
+//       title: 'Service 5',
+//       description: 'Description for service 5',
+//       image: 'https://media.zenfs.com/es/el_nuevo_herald_986/3ad16804f99f34318526d3ed3bff6ad7',
+//     },
+//   ];
+
+//   const sliderSettings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     afterChange: (current: number) => {
+//       setBackgroundImage(services[current].image);
+//     },
+//   };
+
+//   return (
+//     <div
+//       className="bg-cover bg-center min-h-[90vh] transition-all duration-500 relative flex items-center"
+//       style={{ backgroundImage: `url(${backgroundImage})` }}
+//     >
+//       {/* Overlay */}
+//       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+
+//       {/* Main Content */}
+//       <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse md:flex-row items-end justify-between w-full z-10">
+
+//         {/* Left Side: Text */}
+//         <div className="w-full md:w-1/2 text-white text-center md:text-left">
+//           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+//             Unlock Your Business Potential with Astrology & Vastu Insights
+//           </h1>
+//           <p className="mt-4 text-lg">
+//             Enhance decision-making, improve workforce compatibility, and boost business success with personalized astrological consultations tailored for your corporate needs.
+//           </p>
+//           <button className="mt-6 px-6 py-3 bg-orange-500 text-white text-lg font-medium rounded-lg shadow-lg hover:bg-orange-600 transition duration-300">
+//             Get Started
+//           </button>
+//         </div>
+
+//         {/* Right Side: Slider */}
+//         <div className="w-full md:w-1/3 max-w-md mt-10 md:mt-0">
+//           <Slider {...sliderSettings}>
+//             {services.map((service, index) => (
+//               <div key={index} className="p-2">
+//                 <div className="p-2 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+//                   <img
+//                     src={service.image}
+//                     alt={service.title}
+//                     className="w-full h-64 object-cover rounded-lg"
+//                   />
+//                 </div>
+//               </div>
+//             ))}
+//           </Slider>
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
 
 
 

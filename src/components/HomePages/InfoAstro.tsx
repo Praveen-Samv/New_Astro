@@ -5,7 +5,7 @@ import React from "react";
 
 const InfoAstro: React.FC = () => {
   return (
-    <div className="why-choose-us flex items-center justify-center gap-[189px] p-0">
+    <div className="why-choose-us flex items-center justify-center gap-[440px] p-0">
       {/* Content Section */}
       <div className="group-39442 flex-shrink-0 w-[712px] h-[260px] relative">
         {/* Title and Underline */}
@@ -46,3 +46,7 @@ const InfoAstro: React.FC = () => {
 };
 
 export default InfoAstro;
+
+
+
+

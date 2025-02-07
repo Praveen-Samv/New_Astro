@@ -430,41 +430,378 @@
 
 
 
+// import React, { useEffect, useState } from "react";
+// import { Link, useNavigate } from "react-router-dom";
+// import  supabase  from "./config/supabaseClient"; // Import the Supabase client
+
+// const Navbar: React.FC = () => {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+//   const navigate = useNavigate();
+
+//   // Check if the user is logged in on component mount
+//   useEffect(() => {
+//     const checkUser = async () => {
+//       const { data: { user } } = await supabase.auth.getUser();
+//       if (user) {
+//         setIsLoggedIn(true); // Set logged in state to true if user exists
+//       }
+//     };
+//     checkUser();
+//   }, []);
+
+//   // Handle logout
+//   const handleLogout = async () => {
+//     const { error } = await supabase.auth.signOut();
+//     if (!error) {
+//       setIsLoggedIn(false); // Update login state
+//       navigate("/"); // Redirect to home page after logout
+//     } else {
+//       console.error("Logout error:", error.message);
+//     }
+//   };
+
+//   return (
+//     <nav className="fixed top-0 left-0 right-0 h-16 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-20">
+//           {/* Left Section: Logo */}
+//           <div className="flex-shrink-0">
+//             <Link to="/">
+//               <img
+//                 src="https://image-resource.creatie.ai/146256977394649/146256977394651/699ab2aa049ff7258c72bcdb4a392392.png"
+//                 className="h-10 w-auto"
+//                 alt="CorpAstro Logo"
+//               />
+//             </Link>
+//           </div>
+
+//           {/* Center Section: Navigation */}
+//           <div className="hidden md:flex items-center justify-center space-x-4">
+//             <Link
+//               to="/numerology"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Free Tools
+//             </Link>
+
+//             <Link
+//               to="/subscription"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Services
+//             </Link>
+
+//             <Link
+//               to="/premium"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Consultations
+//             </Link>
+
+//             <Link
+//               to="/blog"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Blog
+//             </Link>
+
+//             <Link
+//               to="/about"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               About Us
+//             </Link>
+
+//             <Link
+//               to="/contact"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Contact Us
+//             </Link>
+//           </div>
+
+//           {/* Right Section: Auth Buttons */}
+//           <div className="hidden md:flex items-center space-x-4">
+//             {isLoggedIn ? (
+//               // Show logout button if user is logged in
+//               <button
+//                 onClick={handleLogout}
+//                 className="text-sm font-medium text-orange-600 hover:text-orange-500"
+//               >
+//                 Logout
+//               </button>
+//             ) : (
+//               // Show login button if user is not logged in
+//               <Link
+//                 to="/login"
+//                 className="text-sm font-medium text-orange-600 hover:text-orange-500"
+//               >
+//                 Login
+//               </Link>
+//             )}
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+//////////////////////
+// import React, { useEffect, useState } from "react";
+// import { Link, useNavigate } from "react-router-dom";
+// import supabase from "./config/supabaseClient"; // Import the Supabase client
+
+// const Navbar: React.FC = () => {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to track mobile menu
+//   const navigate = useNavigate();
+
+//   // Check if the user is logged in on component mount
+//   useEffect(() => {
+//     const checkUser = async () => {
+//       const { data: { user } } = await supabase.auth.getUser();
+//       if (user) {
+//         setIsLoggedIn(true); // Set logged in state to true if user exists
+//       }
+//     };
+//     checkUser();
+//   }, []);
+
+//   // Handle logout
+//   const handleLogout = async () => {
+//     const { error } = await supabase.auth.signOut();
+//     if (!error) {
+//       setIsLoggedIn(false); // Update login state
+//       navigate("/"); // Redirect to home page after logout
+//     } else {
+//       console.error("Logout error:", error.message);
+//     }
+//   };
+
+//   // Toggle mobile menu
+//   const toggleMobileMenu = () => {
+//     setIsMobileMenuOpen(!isMobileMenuOpen);
+//   };
+
+//   return (
+//     <nav className="fixed top-0 left-0 right-0 h-20 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-20">
+//           {/* Left Section: Logo */}
+//           <div className="flex-shrink-0">
+//             <Link to="/">
+//               <img
+//                 src="https://image-resource.creatie.ai/146256977394649/146256977394651/699ab2aa049ff7258c72bcdb4a392392.png"
+//                 className="h-12 w-auto"
+//                 alt="CorpAstro Logo"
+//               />
+//             </Link>
+//           </div>
+
+//           {/* Mobile Menu Toggle */}
+//           <div className="md:hidden flex items-center">
+//             <button
+//               onClick={toggleMobileMenu}
+//               className="text-gray-900 hover:text-orange-500 focus:outline-none"
+//             >
+//               <svg
+//                 className="h-6 w-6"
+//                 fill="none"
+//                 stroke="currentColor"
+//                 viewBox="0 0 24 24"
+//                 xmlns="http://www.w3.org/2000/svg"
+//               >
+//                 <path
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                   strokeWidth="2"
+//                   d="M4 6h16M4 12h16m-7 6h7"
+//                 ></path>
+//               </svg>
+//             </button>
+//           </div>
+
+//           {/* Center Section: Navigation */}
+//           <div className="hidden md:flex items-center justify-center space-x-4">
+//             <Link
+//               to="/numerology"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Free Tools
+//             </Link>
+
+//             <Link
+//               to="/subscription"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Services
+//             </Link>
+
+//             <Link
+//               to="/premium"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Consultations
+//             </Link>
+
+//             <Link
+//               to="/blog"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Blog
+//             </Link>
+
+//             <Link
+//               to="/about"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               About Us
+//             </Link>
+
+//             <Link
+//               to="/contact"
+//               className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Contact Us
+//             </Link>
+//           </div>
+
+//           {/* Right Section: Auth Buttons */}
+//           <div className="hidden md:flex items-center space-x-4">
+//             {isLoggedIn ? (
+//               // Show logout button if user is logged in
+//               <button
+//                 onClick={handleLogout}
+//                 className="text-base font-medium text-orange-600 hover:text-orange-500"
+//               >
+//                 Logout
+//               </button>
+//             ) : (
+//               // Show login button if user is not logged in
+//               <Link
+//                 to="/login"
+//                 className="text-base font-medium text-orange-600 hover:text-orange-500"
+//               >
+//                 Login
+//               </Link>
+//             )}
+//           </div>
+//         </div>
+
+//         {/* Mobile Menu */}
+//         {isMobileMenuOpen && (
+//           <div className="md:hidden mt-4">
+//             <div className="flex flex-col space-y-2">
+//               <Link
+//                 to="/numerology"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 Free Tools
+//               </Link>
+
+//               <Link
+//                 to="/subscription"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 Services
+//               </Link>
+
+//               <Link
+//                 to="/premium"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 Consultations
+//               </Link>
+
+//               <Link
+//                 to="/blog"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 Blog
+//               </Link>
+
+//               <Link
+//                 to="/about"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 About Us
+//               </Link>
+
+//               <Link
+//                 to="/contact"
+//                 className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//               >
+//                 Contact Us
+//               </Link>
+
+//               {isLoggedIn ? (
+//                 <button
+//                   onClick={handleLogout}
+//                   className="px-4 py-2 rounded-full text-base font-medium text-orange-600 hover:text-orange-500"
+//                 >
+//                   Logout
+//                 </button>
+//               ) : (
+//                 <Link
+//                   to="/login"
+//                   className="px-4 py-2 rounded-full text-base font-medium text-orange-600 hover:text-orange-500"
+//                 >
+//                   Login
+//                 </Link>
+//               )}
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import  supabase  from "./config/supabaseClient"; // Import the Supabase client
+import supabase from "./config/supabaseClient";
 
 const Navbar: React.FC = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Check if the user is logged in on component mount
   useEffect(() => {
     const checkUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
-        setIsLoggedIn(true); // Set logged in state to true if user exists
+        setIsLoggedIn(true);
       }
     };
     checkUser();
   }, []);
 
-  // Handle logout
   const handleLogout = async () => {
     const { error } = await supabase.auth.signOut();
     if (!error) {
-      setIsLoggedIn(false); // Update login state
-      navigate("/"); // Redirect to home page after logout
+      setIsLoggedIn(false);
+      navigate("/");
     } else {
       console.error("Logout error:", error.message);
     }
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Left Section: Logo */}
+    <nav className="fixed top-0 left-0 right-0 h-16 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
+      <div className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link to="/">
               <img
@@ -475,72 +812,103 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
-          {/* Center Section: Navigation */}
-          <div className="hidden md:flex items-center justify-center space-x-4">
-            <Link
-              to="/numerology"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={toggleMobileMenu}
+              className="text-gray-900 hover:text-orange-500 focus:outline-none"
             >
-              Free Tools
-            </Link>
-
-            <Link
-              to="/subscription"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Services
-            </Link>
-
-            <Link
-              to="/premium"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Consultations
-            </Link>
-
-            <Link
-              to="/blog"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Blog
-            </Link>
-
-            <Link
-              to="/about"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              About Us
-            </Link>
-
-            <Link
-              to="/contact"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Contact Us
-            </Link>
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
           </div>
 
-          {/* Right Section: Auth Buttons */}
+          <div className="hidden md:flex items-center justify-center space-x-4">
+            {[
+              { path: "/numerology", label: "Free Tools" },
+              { path: "/subscription", label: "Services" },
+              { path: "/premium", label: "Consultations" },
+              { path: "/blog", label: "Blog" },
+              { path: "/about", label: "About Us" },
+              { path: "/contact", label: "Contact Us" },
+            ].map(({ path, label }) => (
+              <Link
+                key={path}
+                to={path}
+                className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+
           <div className="hidden md:flex items-center space-x-4">
             {isLoggedIn ? (
-              // Show logout button if user is logged in
               <button
                 onClick={handleLogout}
-                className="text-sm font-medium text-orange-600 hover:text-orange-500"
+                className="text-base font-medium text-orange-600 hover:text-orange-500"
               >
                 Logout
               </button>
             ) : (
-              // Show login button if user is not logged in
               <Link
                 to="/login"
-                className="text-sm font-medium text-orange-600 hover:text-orange-500"
+                className="text-base font-medium text-orange-600 hover:text-orange-500"
               >
                 Login
               </Link>
             )}
           </div>
         </div>
+
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4">
+            <div className="flex flex-col space-y-2">
+              {[
+                { path: "/numerology", label: "Free Tools" },
+                { path: "/subscription", label: "Services" },
+                { path: "/premium", label: "Consultations" },
+                { path: "/blog", label: "Blog" },
+                { path: "/about", label: "About Us" },
+                { path: "/contact", label: "Contact Us" },
+              ].map(({ path, label }) => (
+                <Link
+                  key={path}
+                  to={path}
+                  className="px-4 py-2 rounded-full text-base font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
+              {isLoggedIn ? (
+                <button
+                  onClick={handleLogout}
+                  className="px-4 py-2 rounded-full text-base font-medium text-orange-600 hover:text-orange-500"
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  className="px-4 py-2 rounded-full text-base font-medium text-orange-600 hover:text-orange-500"
+                >
+                  Login
+                </Link>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
