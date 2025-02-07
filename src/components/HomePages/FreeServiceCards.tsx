@@ -249,7 +249,7 @@ const FreeServiceCards = () => {
       id: 1,
       title: "Company Name Number Calculator",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/b3b02691dfe6e5452c8037623dff37ae.png",
+        "https://sun9-33.userapi.com/impg/0xYGtIMdImdWh-fHTkcMDuA9s70iXvjX1L3h1w/Q9vjh_B7JGE.jpg?size=1074x480&quality=96&sign=99c1865d0863d91c084caf0a7f11b766&type=share",
     },
     {
       id: 2,
@@ -267,7 +267,7 @@ const FreeServiceCards = () => {
       id: 4,
       title: "Company Logo Suggestions",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/22c272e5b7b252dce03a99ffeba0768a.png",
+        "https://www.universetoday.com/wp-content/uploads/2009/08/planet_signs.jpg",
     },
     {
       id: 5,

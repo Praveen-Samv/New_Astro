@@ -576,13 +576,13 @@ const AstroResourceCards = () => {
                     </div>
 
                     {/* Card Info */}
-                    <div className="absolute top-[90px] left-4 space-y-2">
+                    <div className="absolute top-[60px] left-4 space-y-2">
                       <h3 className="text-lg font-normal text-[#0A0A0A]">{card.title}</h3>
                       <p className="text-sm text-[#292929] opacity-60">{card.description}</p>
                     </div>
 
                     {/* Read More Button */}
-                    <div className="absolute bottom-6 left-4 px-5 py-[6px] bg-[#FF9500] text-white rounded-full">
+                    <div className="absolute bottom-6 t-12  left-4 px-5 py-[6px] bg-[#FF9500] text-white rounded-full ">
                       <span className="text-sm font-semibold">Read More</span>
                     </div>
                   </div>

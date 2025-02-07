@@ -265,11 +265,11 @@ const FreeServices = () => {
             {/* Card Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 lg:px-16 py-16">
                 {[
-                    { title: "Company Name Number Calculator", img: "b3b02691dfe6e5452c8037623dff37ae.png", link: "/compay-name" },
-                    { title: "Brand Name Number Calculator", img: "013c1d62729c2d0f481cc94e3ea0ff88.png", link: "/brand-name" },
-                    { title: "Favourable Colour Combinations", img: "539ecbb8d3ce7db2498cdfd7d5700653.jpg", link: "/favourable-color" },
-                    { title: "Company Logo Suggestions", img: "22c272e5b7b252dce03a99ffeba0768a.png", link: "/company-logo" },
-                    { title: "Company Tagline Analysis", img: "28aae29f47a19eaed148eb2836c302e1.png", link: "/company-tagline" },
+                    { title: "Company Name Number Calculator", img: "https://www.bestwatch.ru/review/images/tild3835-3261-4239-b937-313666353132__magia-zifr.jpg", link: "/compay-name" },
+                    { title: "Brand Name Number Calculator", img: "https://images.lifestyleasia.com/wp-content/uploads/sites/5/2023/05/26142505/numerology-2-1600x900.jpeg", link: "/brand-name" },
+                    { title: "Favourable Colour Combinations", img: "https://avatars.mds.yandex.net/i?id=93cb3c00540817aa375e5c83d7892d2b71f85007-5569020-images-thumbs&n=13", link: "/favourable-color" },
+                    { title: "Company Logo Suggestions", img: "https://sun9-55.userapi.com/impg/lXHAfiKpyiPzB88dosmW9i0DbftfXfNeH5mipg/mx0RLkfz8cs.jpg?size=807x529&quality=95&sign=5b7e5878fabfd838044a19131cf7105a&c_uniq_tag=o8qqbIlgJMOKcClAlmoJktMvUrUPP8pk2hzRnKNZ-ME&type=album", link: "/company-logo" },
+                    { title: "Company Tagline Analysis", img: "https://cdn.culture.ru/images/e699b5fc-be80-5c27-99e7-f17e3b644604", link: "/company-tagline" },
                 ].map((card, index) => (
                     <div
                         key={index}
@@ -277,7 +277,7 @@ const FreeServices = () => {
                         onClick={() => handleCardClick(card.link)}
                     >
                         <img
-                            src={`https://image-resource.creatie.ai/146256977394650/146256977394652/${card.img}`}
+                            src={card.img}
                             alt={card.title}
                             className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                         />

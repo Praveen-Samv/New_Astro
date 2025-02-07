@@ -235,11 +235,11 @@ const PremiumServices = () => {
             {/* Card Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-10 py-6 sm:py-10">
                 {[
-                    { title: "ASTRO-BRANDING", img: "16b8ed602622fc00c181632807718983.jpg", link: "/astro-premium" },
-                    { title: "ASTRO-MANAGEMENT", img: "6c08c4a56e6872da18b314b1d34899fc.jpg", link: "/astro-premium" },
-                    { title: "ASTRO-STAFFING", img: "e178726edd465c43062061759e4b2593.jpg", link: "/astro-premium" },
-                    { title: "VASTU & VIBRATIONS", img: "52d31b9983023bc39e0818f8a391f500.jpg", link: "/astro-premium" },
-                    { title: "PERSONAL CONSULTATION", img: "ae4b8399578a212e220948aa8fd9dc05.jpg", link: "/astro-premium" },
+                    { title: "ASTRO-BRANDING", img: "https://astroson.com/wp-content/uploads/2017/05/cveta-znakov-zodiaka.png", link: "/astro-premium" },
+                    { title: "ASTRO-MANAGEMENT", img: "https://i.ytimg.com/vi/JdFINhb9KO8/maxresdefault.jpg", link: "/astro-premium" },
+                    { title: "ASTRO-STAFFING", img: "https://www.barahla.net/images/photo/2/20150808/6921590/big/143901509304128700_big.jpg", link: "/astro-premium" },
+                    { title: "VASTU & VIBRATIONS", img: "https://astrologersridev.com/wp-content/uploads/2022/10/vastu-shastra.jpg", link: "/astro-premium" },
+                    { title: "PERSONAL CONSULTATION", img: "https://liter.kz/cache/imagine/1200/uploads/news/2022/05/12/627cfcfb440b5839405136.png", link: "/astro-premium" },
                 ].map((card, index) => (
                     <Link
                         to={card.link}
@@ -247,7 +247,7 @@ const PremiumServices = () => {
                         className="relative bg-white shadow-lg rounded-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300"
                     >
                         <img
-                            src={`https://image-resource.creatie.ai/146256977394650/146256977394652/${card.img}`}
+                            src={card.img}
                             alt={card.title}
                             className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                         />

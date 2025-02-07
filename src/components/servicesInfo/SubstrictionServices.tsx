@@ -91,11 +91,11 @@ const SubstrictionServices = () => {
             {/* Card Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-16 py-10">
                 {[
-                    { title: "Business Predictions", img: "3e4fe40eacf896d69c666e357c390f70.jpg", link: "/astro-service" },
-                    { title: "Favourable Muhurats & Days", img: "e38dd5d4e9d1fb0a0270c3f723c0ab9a.jpg", link: "/astro-service" },
-                    { title: "Dos & Don'ts", img: "2568009482740a2271b7bdaa59fe6340.jpg", link: "/astro-service" },
-                    { title: "Monthly Business Reports", img: "93b4d05fa9efffa4df8c48f0e2d9b409.jpg", link: "/astro-service" },
-                    { title: "AI-Powered Query Support", img: "3840082117d32e6ecd2c8bc2d33bbc18.jpg", link: "/astro-service" },
+                    { title: "Business Predictions", img: "https://image.hurimg.com/i/hurriyet/75/866x494/64f0aada4e3fe016506f8fff.jpg", link: "/astro-service" },
+                    { title: "Favourable Muhurats & Days", img: "https://avatars.dzeninfra.ru/get-zen_doc/1895332/pub_638047d6aca2f726ab725368_6380489750b5c14119380e5b/scale_1200", link: "/astro-service" },
+                    { title: "Dos & Don'ts", img: "https://i.ytimg.com/vi/QfrCQxXZqsU/maxresdefault.jpg", link: "/astro-service" },
+                    { title: "Monthly Business Reports", img: "https://cdn.culture.ru/images/6881a612-40d5-5502-bdaf-76b6f03ad526", link: "/astro-service" },
+                    { title: "AI-Powered Query Support", img: "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202109/astrology-sixteen_nine.jpg", link: "/astro-service" },
                 ].map((card, index) => (
                     <Link
                         to={card.link}
@@ -104,7 +104,7 @@ const SubstrictionServices = () => {
                     >
                         {/* Image Section */}
                         <img
-                            src={`https://image-resource.creatie.ai/146256977394650/146256977394652/${card.img}`}
+                            src={card.img}
                             alt={card.title}
                             className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                         />
