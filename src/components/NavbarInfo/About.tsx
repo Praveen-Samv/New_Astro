@@ -166,7 +166,7 @@ const About = () => {
 
         {/* Text Section */}
         <div className="flex-1">
-          <p className="text-gray-800 text-lg mt-8 sm:mt-20 leading-7">
+          <p className="text-gray-800 text-lg mt-8 sm:mt-20 font-normal leading-7">
             At Corp Astro, we specialize in leveraging the power of the cosmos to enhance your business success through astro-branding, astro staffing, and Vastu services. Led by renowned astrologers Dr. Tumul Raathi and Aanchal Rathi, we align your business strategies with astrological insights to boost profits, optimize sales, and improve employee dynamics. Our expert team provides personalized, holistic solutions that harmonize your brand, team, and workspace with cosmic energies, ensuring growth and prosperity. Partner with Corp Astro to unlock the celestial potential of your business.
           </p>
         </div>
@@ -185,7 +185,7 @@ const About = () => {
             className="w-[200px] sm:w-[323px] h-[12px] sm:h-[18px] object-cover mx-auto lg:ml-2 mb-6"
             alt="Underline"
           />
-          <p className="text-gray-800 text-lg mt-6 sm:mt-22 leading-7">
+          <p className="text-gray-800 text-lg mt-6 sm:mt-22 leading-7 font-normal">
             Based in Hyderabad, he is a young and modern Vedic Astrologer in India, known for his effective and unconventional approach. He excels as a consultant for corporate and business enterprises, using a scientific and practical methodology. His expertise includes Vedic Astrology, Numerology, Nameology, Commercial Vaastu, and Signature Analysis, combining these disciplines for problem-solving. Tech-savvy, well-traveled, and driven to guide others, he has a sharp, logical mind. With experience in both business and spiritual realms, he helps clients balance professional needs with spiritual values. He works with individuals seeking improvement and business owners creating successful, soul-centric enterprises. He sees astrology as a guiding science, not just predictive, believing a good astrologer can lead individuals to a better, more prosperous life.
           </p>
         </div>
@@ -238,7 +238,7 @@ const About = () => {
 
         {/* Text Section */}
         <div className="flex-1">
-          <p className="text-gray-800 text-lg mt-8 sm:mt-32 leading-7">
+          <p className="text-gray-800 text-lg mt-8 sm:mt-32 font-normal  leading-7">
             Aanchal Rathi is a gifted Tarot Card Reader, Reiki Healer, and Feng Shui expert, renowned for her intuitive insights and healing touch. With a deep understanding of the mystical arts, she helps individuals navigate their life's journey, offering clarity and guidance through her tarot readings. As a Reiki healer, Aanchal harnesses universal energy to promote physical, emotional, and spiritual well-being, creating a harmonious balance in her clients' lives. Her expertise in Feng Shui further enhances this balance by optimizing the flow of energy in homes and workplaces, fostering environments that support prosperity, health, and happiness. Aanchal’s compassionate approach and profound wisdom make her a trusted guide for those seeking enlightenment, healing, and harmony.
           </p>
         </div>

@@ -170,7 +170,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between gap-8 w-full">
           {/* Column 1 */}
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-white">Corporate Info</h3>
+            <h3 className="text-lg font-normal text-white">Corporate Info</h3>
             <a href="#" className="text-sm text-gray-300 hover:text-white">
               Privacy Policy
             </a>
@@ -187,7 +187,7 @@ const Footer = () => {
 
           {/* Column 2 */}
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-white">Services</h3>
+            <h3 className="text-lg font-normal text-white">Services</h3>
             <a href="#" className="text-sm text-gray-300 hover:text-white">
               Astro-Branding
             </a>
@@ -204,7 +204,7 @@ const Footer = () => {
 
           {/* Column 3 */}
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <h3 className="text-lg font-normal text-white">Quick Links</h3>
             <a href="#" className="text-sm text-gray-300 hover:text-white">
               About Us
             </a>
@@ -218,7 +218,7 @@ const Footer = () => {
 
           {/* Column 4 */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-lg font-semibold text-white">Join Us</h3>
+            <h3 className="text-lg font-normal text-white">Join Us</h3>
             {/* Follow Us Section */}
             <div className="flex justify-center sm:justify-start space-x-4 text-gray-300">
               <FaFacebookF className="w-6 h-6 hover:text-blue-500 cursor-pointer" />

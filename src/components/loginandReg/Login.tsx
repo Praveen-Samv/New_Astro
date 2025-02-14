@@ -636,7 +636,7 @@ const LoginPage: React.FC = () => {
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat pt-28"
       style={{
-        backgroundImage: "url('https://stihi.ru/pics/2024/08/04/4548.jpg')",
+        backgroundImage: "url('https://avatars.yandex.net/get-music-content/10092855/9482e383.a.27048463-1/m1000x1000?webp=false')",
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         backgroundBlendMode: 'overlay'
       }}

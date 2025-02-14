@@ -321,7 +321,7 @@ const ClientSuccessCards: React.FC = () => {
                 />
                 <div className="ml-4">
                   <p className="text-lg font-bold">{card.name}</p>
-                  <p className="text-sm text-gray-600">{card.role}</p>
+                  <p className="text-sm font-normal text-gray-600">{card.role}</p>
                 </div>
                 {/* Star Ratings */}
                 <div className="ml-auto flex gap-1">

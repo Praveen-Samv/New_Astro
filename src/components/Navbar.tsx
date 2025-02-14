@@ -836,6 +836,7 @@ const Navbar: React.FC = () => {
 
           <div className="hidden md:flex items-center justify-center space-x-4">
             {[
+              { path: "/", label: "Home" },
               { path: "/numerology", label: "Free Tools" },
               { path: "/subscription", label: "Services" },
               { path: "/premium", label: "Consultations" },
@@ -876,6 +877,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden mt-4">
             <div className="flex flex-col space-y-2">
               {[
+                { path: "/", label: "Home" },
                 { path: "/numerology", label: "Free Tools" },
                 { path: "/subscription", label: "Services" },
                 { path: "/premium", label: "Consultations" },
