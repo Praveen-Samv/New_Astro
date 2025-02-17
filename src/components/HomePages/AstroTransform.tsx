@@ -368,7 +368,7 @@ const AstroTransform: React.FC = () => {
 
           {/* Rotating Image */}
           <img
-            src="https://image-resource.creatie.ai/146256977394650/146256977394652/662e16b441fd879ff5cab7f9298bbd5a.webp"
+            src="src\assets\home\662e16b441fd879ff5cab7f9298bbd5a.webp"
             alt="Service Circle"
             className="
               absolute 

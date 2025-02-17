@@ -232,7 +232,7 @@ const AstroBusinessTrust = () => {
     <div className="why-choose-us flex flex-col md:flex-row justify-between items-center gap-10 md:gap-24 px-8 md:px-[200px] pt-10">
       {/* Image Section */}
       <img
-        src="https://image-resource.creatie.ai/146256977394650/146256977394652/49c19135e11d7ffa0d2d1e30ce7581c8.png"
+        src="src\assets\home\49c19135e11d7ffa0d2d1e30ce7581c8.png"
         className="about w-[300px] md:w-[330px] h-auto object-cover" // Increased image size
         alt="Why Choose Us"
       />
@@ -245,7 +245,7 @@ const AstroBusinessTrust = () => {
             Why Businesses Trust CORP ASTRO
           </h2>
           <img
-            src="https://image-resource.creatie.ai/146256977394650/146256977394652/dc645f8e9ad238de31610a43d734a52f.webp"
+            src="src\assets\home\dc645f8e9ad238de31610a43d734a52f.webp"
             className="underline w-[200px] md:w-[323px] h-[12px] md:h-[18px] object-cover mx-auto md:mx-0"
             alt="Underline"
           />

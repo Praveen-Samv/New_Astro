@@ -63,7 +63,7 @@ const InfoAstro: React.FC = () => {
             Transform Your Business with Astrology, Vastu, and Numerology
           </h2>
           <img
-            src="https://image-resource.creatie.ai/146256977394650/146256977394652/dc645f8e9ad238de31610a43d734a52f.webp"
+            src="src\assets\home\dc645f8e9ad238de31610a43d734a52f.webp"
             className="w-[323px] h-[18px] object-cover"
             alt="Underline"
           />
@@ -86,7 +86,7 @@ const InfoAstro: React.FC = () => {
 
       {/* Image Section */}
       <img
-        src="https://image-resource.creatie.ai/146256977394650/146256977394652/74dd079819054a0da6dfe5ae34c8f492.jpg"
+        src="src\assets\home\74dd079819054a0da6dfe5ae34c8f492.jpg"
         className="flex-shrink-0 w-[326px] h-[314px] object-cover rounded-[15px]"
         alt="About Us"
       />

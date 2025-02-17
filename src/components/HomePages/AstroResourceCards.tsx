@@ -452,7 +452,7 @@ const AstroResourceCards = () => {
       date: 'January 01, 2025',
       title: 'Zodiac Sign',
       author: 'Srikant Todalagoppa',
-      image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1v5Zea.img?w=1280&h=720&m=4&q=39',
+      image: 'src/assets/home/AA1v5Zea.jpg',
       link: '/blog/Zodiac',
       description: "A solar eclipse is a powerful celestial event that symbolizes new beginnings and transformations."
     },
@@ -460,7 +460,7 @@ const AstroResourceCards = () => {
       date: 'January 5, 2025',
       title: 'Career and Love Horoscopes',
       author: 'Gowtham',
-      image: 'https://avatars.mds.yandex.net/i?id=5d4e3ab968fc5e1ebe0b4b2d3dbd01745e3b01ad-8209833-images-thumbs&n=13',
+      image: 'src/assets/home/i.webp',
       link: '/blog/astrology-chakras-psychic-energy',
       description: "The alignment of the stars and planets can have a profound impact on your career and love life."
     },
@@ -468,7 +468,7 @@ const AstroResourceCards = () => {
       date: 'January 06, 2025',
       title: 'Mercury Retrograde',
       author: 'Vikram Lohe',
-      image: 'https://static.life.ru/ip/unsafe/rs:fill:1200:/gravity:ce/q:100/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyMy8xMi8xNC8xMjE5NTQ2MTEyNzI3LjIyMS53ZWJw',
+      image: 'src/assets/home/1219546112727.221.webp',
       link: '/blog/mercury-retro',
       description: "Mercury retrograde is a phenomenon that often gets a bad reputation, but it’s not all doom and gloom."
     },
@@ -476,7 +476,7 @@ const AstroResourceCards = () => {
       date: 'January 06, 2025',
       title: 'Finacial-Astrology',
       author: 'Thota Praveen Kumar',
-      image: 'https://avatars.mds.yandex.net/i?id=d72525ac728fd161d807a9f5c591897a314c1d0d-12636876-images-thumbs&n=13',
+      image: 'src/assets/home/i (1).webp',
       link: '/blog/finacial-astrology',
       description: "Discover how planetary movements can influence stock market trends and guide your financial decisions."
     },
@@ -484,7 +484,7 @@ const AstroResourceCards = () => {
       date: 'January, 07, 2025',
       title: 'Unlocking the Secrets of Astrology',
       author: 'Goutham Krishna',
-      image: 'https://i.ytimg.com/vi/WV6EMOK8sG4/maxresdefault.jpg',
+      image: 'src/assets/home/maxresdefault.jpg',
       link: '/blog/astrology-educational',
       description: "Astrology is more than just horoscopes. It's a fascinating study of celestial bodies and their influence on human behavior and events."
     },
@@ -492,7 +492,7 @@ const AstroResourceCards = () => {
       date: 'January 9, 2025',
       title: 'Major Astrological Shifts in 2025',
       author: 'Praveen Kumar Thota',
-      image: 'https://static1.smi2.net/img/1200x630/7917851.jpeg',
+      image: 'src/assets/home/7917851.jpeg',
       link: '/blog/astrology-shift-2025',
       description: "2025 is set to be a transformative year in astrology, with significant planetary movements and alignments that will impact our lives."
     },

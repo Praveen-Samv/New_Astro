@@ -32,7 +32,7 @@ const AstroBusinessTitle = () => {
 
       {/* Underline */}
       <img
-        src="https://image-resource.creatie.ai/146256977394650/146256977394652/dc645f8e9ad238de31610a43d734a52f.webp"
+        src="src\assets\home\dc645f8e9ad238de31610a43d734a52f.webp"
         className="w-40 md:w-64 lg:w-[323px] h-auto object-cover"
         alt="Underline"
       />

@@ -249,31 +249,31 @@ const FreeServiceCards = () => {
       id: 1,
       title: "Company Name Number Calculator",
       image:
-        "https://sun9-33.userapi.com/impg/0xYGtIMdImdWh-fHTkcMDuA9s70iXvjX1L3h1w/Q9vjh_B7JGE.jpg?size=1074x480&quality=96&sign=99c1865d0863d91c084caf0a7f11b766&type=share",
+        "src/assets/home/Q9vjh_B7JGE.jpg",
     },
     {
       id: 2,
       title: "Brand Name Number Calculator",
       image:
-        "https://cdn-edge.kwork.ru/pics/t3/51/7865032-1592132951.jpg",
+        "src/assets/home/7865032-1592132951.jpg",
     },
     {
       id: 3,
       title: "Favourable Colour Combinations",
       image:
-        "https://i.pinimg.com/originals/48/b7/eb/48b7ebbaa504a369ffcd056d652dd28f.jpg",
+        "src/assets/home/48b7ebbaa504a369ffcd056d652dd28f.jpg",
     },
     {
       id: 4,
       title: "Company Logo Suggestions",
       image:
-        "https://www.universetoday.com/wp-content/uploads/2009/08/planet_signs.jpg",
+        "src/assets/home/planet_signs.jpg",
     },
     {
       id: 5,
       title: "Company Tagline Analysis",
       image:
-        "https://www.depts.ttu.edu/research/imms/images/slider/dashboard-performance.jpg",
+        "src/assets/home/dashboard-performance.jpg",
     },
   ];
 

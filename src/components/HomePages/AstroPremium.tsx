@@ -220,31 +220,31 @@ const AstroPremium = () => {
       id: 1,
       title: "ASTRO-BRANDING",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/16b8ed602622fc00c181632807718983.jpg",
+        "src/assets/home/16b8ed602622fc00c181632807718983.jpg",
     },
     {
       id: 2,
       title: "ASTRO-MANAGEMENT",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/b6dd8af070a44c78af12f389af43ff63.jpg",
+        "src/assets/home/b6dd8af070a44c78af12f389af43ff63.jpg",
     },
     {
       id: 3,
       title: "ASTRO-STAFFING",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/79521640ee8029bbedbdbdee65332db2.jpeg",
+        "src/assets/home/79521640ee8029bbedbdbdee65332db2.jpeg",
     },
     {
       id: 4,
       title: "VASTU & VIBRATIONS",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/941209b10a065cb7c88c5af75b61bf09.jpg",
+        "src/assets/home/941209b10a065cb7c88c5af75b61bf09.jpg",
     },
     {
       id: 5,
       title: "PERSONAL CONSULTATION",
       image:
-        "https://image-resource.creatie.ai/146256977394650/146256977394652/2d2d8b22c9bbed2117f3e1b8ec617145.webp",
+        "src/assets/home/2d2d8b22c9bbed2117f3e1b8ec617145.webp",
     },
   ];
 

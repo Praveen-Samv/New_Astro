@@ -279,7 +279,7 @@ const ClientSuccessCards: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(https://tengrinews.kz/userdata/news/2023/news_519280/thumb_m/photo_454139.jpeg)",
+            "url(/src/assets/home/photo_454139.jpeg)",
         }}
       ></div>
 

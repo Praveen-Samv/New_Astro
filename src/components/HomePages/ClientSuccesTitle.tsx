@@ -37,7 +37,7 @@ const ClientSuccessTitle = () => {
 
       {/* Underline */}
       <img
-        src="https://image-resource.creatie.ai/146256977394650/146256977394652/dc645f8e9ad238de31610a43d734a52f.webp"
+        src="src\assets\home\dc645f8e9ad238de31610a43d734a52f.webp"
         className="w-[200px] md:w-[280px] lg:w-[323px] h-[14px] md:h-[16px] lg:h-[18px] object-cover"
         alt="Underline"
       />

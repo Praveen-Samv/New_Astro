@@ -132,7 +132,7 @@ const Footer = () => {
     <div
       className="relative z-10 shadow-md"
       style={{
-        backgroundImage: `url('https://news.store.rambler.ru/img/74938c1226f9b698b9ed2ca14d5a7ec5')`,
+        backgroundImage: `url('/src/assets/home/74938c1226f9b698b9ed2ca14d5a7ec5.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

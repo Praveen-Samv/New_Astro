@@ -448,33 +448,33 @@ const Hero: React.FC = () => {
     {
       title: 'Service 1',
       description: 'Description for service 1',
-      image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/b6dd8af070a44c78af12f389af43ff63.jpg',
+      image: 'src/assets/home/b6dd8af070a44c78af12f389af43ff63.jpg',
     },
     {
       title: 'Service 2',
       description: 'Description for service 2',
-      image: 'https://image-resource.creatie.ai/146256977394649/146256977394651/16b8ed602622fc00c181632807718983.jpg',
+      image: 'src/assets/home/16b8ed602622fc00c181632807718983.jpg',
     },
     {
       title: 'Service 3',
       description: 'Description for service 3',
-      image: 'https://image-resource.creatie.ai/146256977394650/146256977394652/6e51027dba348583de149cd5ce2e6876.webp',
+      image: 'src/assets/home/6e51027dba348583de149cd5ce2e6876.webp',
     },
     {
       title: 'Service 4',
       description: 'Description for service 4',
-      image: 'https://newseu.cgtn.com/news/2021-01-11/World-famous-astrologer-shares-her-optimism-for-2021-WTw73sf3iM/img/d388cbf9ca204134981c21b215bdffef/d388cbf9ca204134981c21b215bdffef-1280.png',
+      image: 'src/assets/home/d388cbf9ca204134981c21b215bdffef-1280.png',
     },
     {
       title: 'Service 5',
       description: 'Description for service 5',
-      image: 'https://media.zenfs.com/es/el_nuevo_herald_986/3ad16804f99f34318526d3ed3bff6ad7',
+      image: 'src/assets/home/3ad16804f99f34318526d3ed3bff6ad7.jpg',
     },
-    {
-      title: 'Service 6',
-      description: 'Description for service 5',
-      image: 'https://spravkarf24.ru/uploads/posts/others/rs/2024/06/goroskop-2-1536x1024-1.jpg',
-    },
+    // {
+    //   title: 'Service 6',
+    //   description: 'Description for service 5',
+    //   image: 'https://spravkarf24.ru/uploads/posts/others/rs/2024/06/goroskop-2-1536x1024-1.jpg',
+    // },
   ];
 
   return (
